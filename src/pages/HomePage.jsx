@@ -7,12 +7,9 @@ const HomePage = () => {
     const response = await fetch(
       `https://ih-countries-api.herokuapp.com/countries`
     );
-    console.log(response);
     if (response.ok) {
       const parsed = await response.json();
-      console.log(parsed);
       setCountries(parsed);
-      console.log(countries);
     }
   };
 

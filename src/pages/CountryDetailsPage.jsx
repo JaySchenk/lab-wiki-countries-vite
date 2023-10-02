@@ -22,7 +22,7 @@ function CountryDetails() {
 
   useEffect(() => {
     fetchCountry();
-  }, []);
+  }, [alpha3]);
 
   return isLoading ? (
     <h1>Loading...</h1>
